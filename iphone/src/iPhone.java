@@ -16,7 +16,7 @@ public class iPhone implements ReprodutorMusical, AparelhoTelefonico, NavegadorI
     @Override
     public void tocar() {
         if (!musicaTocando) {
-            System.out.println("Reproduzindo música.");
+            System.out.println("Reproduzindo a música.");
             musicaTocando = true;
         } else {
             System.out.println("A música já está tocando.");
@@ -26,7 +26,7 @@ public class iPhone implements ReprodutorMusical, AparelhoTelefonico, NavegadorI
     @Override
     public void pausar() {
         if (musicaTocando) {
-            System.out.println("Pausando música.");
+            System.out.println("Pausando a música.");
             musicaTocando = false;
         } else {
             System.out.println("A música não está tocando atualmente.");
@@ -35,7 +35,7 @@ public class iPhone implements ReprodutorMusical, AparelhoTelefonico, NavegadorI
 
     @Override
     public void selecionarMusica() {
-        System.out.println("Selecionando uma música.");
+        System.out.println("Selecionando música.");
     }
 
     @Override
@@ -44,7 +44,7 @@ public class iPhone implements ReprodutorMusical, AparelhoTelefonico, NavegadorI
             System.out.println("Ligando para um contato.");
             chamadaAtiva = true;
         } else {
-            System.out.println("Já existe uma chamada ativa.");
+            System.out.println("Já existe uma chamada sendo efetuada.");
         }
     }
 
@@ -54,7 +54,7 @@ public class iPhone implements ReprodutorMusical, AparelhoTelefonico, NavegadorI
             System.out.println("Atendendo uma chamada.");
             chamadaAtiva = true;
         } else {
-            System.out.println("Já existe uma chamada ativa.");
+            System.out.println("Já existe uma chamada sendo efetuada.");
         }
     }
 
@@ -66,20 +66,20 @@ public class iPhone implements ReprodutorMusical, AparelhoTelefonico, NavegadorI
     @Override
     public void exibirPagina(String url) {
         paginaAtual = url;
-        System.out.println("Exibindo página: " + url);
+        System.out.println("Exibindo a página: " + url);
     }
 
     @Override
     public void adicionarNovaAba(String url) {
-        System.out.println("Adicionando nova aba: " + url);
+        System.out.println("Adicionando uma nova aba: " + url);
     }
 
     @Override
     public void atualizarPagina() {
         if (!paginaAtual.isEmpty()) {
-            System.out.println("Atualizando página: " + paginaAtual);
+            System.out.println("Atualizando a página: " + paginaAtual);
         } else {
-            System.out.println("Nenhuma página aberta para atualizar.");
+            System.out.println("Nenhuma página aberta para ser atualizada.");
         }
     }
 }
